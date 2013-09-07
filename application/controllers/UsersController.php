@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends Zend_Controller_Action
+class UsersController extends Zend_Controller_Action
 {
 
     public function init()
@@ -11,7 +11,6 @@ class IndexController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
-        $this->view->poraka = "Здраво Slave";
     }
 
 
