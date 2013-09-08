@@ -13,3 +13,15 @@ root {
 h1{
     color: red;
 }
+
+#header{
+    background: #ff0000;
+}
+
+#main{
+    background: #00ff00;
+}
+
+#footer{
+    background: #0000ff;
+}
