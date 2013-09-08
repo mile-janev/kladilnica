@@ -1,0 +1,15 @@
+/* 
+    Document   : global
+    Created on : Sep 8, 2013, 9:23:42 PM
+    Author     : mile and slave
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+h1{
+    color: red;
+}
