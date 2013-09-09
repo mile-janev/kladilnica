@@ -24,6 +24,7 @@
       <modelsDirectory>
         <dbTableDirectory>
           <dbTableFile dbTableName="Users"/>
+          <dbTableFile dbTableName="UserRoles"/>
         </dbTableDirectory>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
