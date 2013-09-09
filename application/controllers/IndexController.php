@@ -13,9 +13,8 @@ class IndexController extends Zend_Controller_Action
         // action body
         $bla = new Application_Model_DbTable_Users();
         $test = $bla->fetchAll();
-        $da = new App_UserRole();
 //        var_dump(Application_Model_DbTable_Users::bre);
-//        var_dump(App_UserRole::DEMO_USER);
+//        var_dump($test[0]->ofaman);
 //        exit();
         $this->view->poraka = "Здраво Slave";
         $this->view->odBaza = $test[0]->username;
