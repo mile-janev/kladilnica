@@ -1,24 +1,34 @@
-<?php echo $this->doctype() ?>
+<?php echo $this->doctype(); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
+    
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Кладилницата на Миле и Славе</title>
-  <?php echo $this->headLink()->appendStylesheet('/css/global.css') ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Кладилницата на Миле и Славе</title>
+    <?php 
+        echo $this->headLink()
+            ->appendStylesheet('/css/global.css')
+            ->appendStylesheet('/css/globalMile.css')
+            ->appendStylesheet('/css/globalSlave.css');
+  
+        echo $this->headScript()
+            ->appendFile('/js/jquery-1.10.2.js');
+    ?>
 </head>
+    
 <body>
-<div id="header" style="background-color: #EEEEEE; height: 30px;">
-    <div id="header-logo" style="float: left">
-        <b>Нашата кладилница почетен layout</b>
-    </div>
-    <div id="header-navigation" style="float: right">
-        <a href="<?php echo $this->url(
-            array('controller'=>'guestbook'),
-            'default',
-            true) ?>">Guestbook</a>
-    </div>
+    
+<div id="header">
+     <?php echo $this->render('header.phtml') ?>
 </div>
  
-<?php echo $this->layout()->content ?>
+<div id="main">
+    <?php echo $this->layout()->content; ?>
+</div>
+    
+<div id="footer">
+    <?php echo $this->render('footer.phtml') ?>
+</div>
  
 </body>
+    
 </html>
