@@ -17,7 +17,7 @@ class IndexController extends Zend_Controller_Action
 //        var_dump($test[0]->ofaman);
 //        exit();
         $this->view->poraka = "Здраво Slave";
-        $this->view->odBaza = $test[0]->username;
+        $this->view->odBaza = $test[1]->username;
     }
 
 
