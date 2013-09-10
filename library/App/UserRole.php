@@ -12,10 +12,10 @@
  */
 class App_UserRole {
     
-    const DEMO_USER = "demo";
-    const REAL_USER = "real";
+    const FREE_USER = "free";
+    const PRO_USER = "professional";
     const MANAGER_USER = "manager";
-    const ADMINISTRATOR_USER = "administrator";
+    const ADMIN_USER = "administrator";
     
     //Da se napisat funkciite. Iminjata  kazuvat so treba da sodrze sekoja od niv
     public function get_user_role_by_id($id=0)
