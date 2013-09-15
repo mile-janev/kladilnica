@@ -10,17 +10,21 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $this->view->poraka = "Здраво Slave";
+    }
+
+    public function testAction()
+    {
+        
         $bla = new Application_Model_DbTable_Users();
         $test = $bla->fetchAll();
         $da = new App_UserRole();
 //        var_dump(Application_Model_DbTable_Users::bre);
-//        var_dump(App_UserRole::DEMO_USER);
+//        var_dump(Application_Model_DbTable_Users::FREE_USER);
+//        var_dump("da"); exit();
 //        exit();
-        $this->view->poraka = "Здраво Slave";
-//        $this->view->odBaza = $test[1]->username;
+        
     }
-
 
 }
 
